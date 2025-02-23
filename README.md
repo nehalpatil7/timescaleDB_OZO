@@ -19,31 +19,50 @@
 
 > sudo apt install postgresql-server-dev-17
 
+
 * installing TSdb
 > echo "deb https://packagecloud.io/timescale/timescaledb/ubuntu/ $(lsb_release -c -s) main" | sudo tee /etc/apt/sources.list.d/timescaledb.list
+
 > sudo apt update
+
 > sudo apt install timescaledb-2-postgresql-17 postgresql-client-17
+
 > sudo timescaledb-tune
+
 > sudo systemctl restart postgresql
+
 > sudo -u postgres psql
+
 > \password postgres
+
 
 * install OZO
 > sudo apt update
+
 > sudo apt install build-essential cmake libboost-all-dev
+
 > git clone https://github.com/yandex/ozo.git
+
 > cd ozo
+
 > mkdir build && cd build
+
 > cmake .. -DOZO_BUILD_TESTS=OFF -DBOOST_ROOT=/opt/boost_1_83_0
+
 > make
+
 > sudo make install
+
 > #define BOOST_HANA_CONFIG_ENABLE_STRING_UDL
+
 
 * create file
 > nano timescale_ozo.cpp
 
+
 * compile
 > g++ -std=c++17 timescale_ozo.cpp -o timescale_ozo -I/usr/local/include -I/usr/include/postgresql -L/usr/local/lib -lpq -lboost_system -pthread
+
 
 * run
 > ./timescale_ozo
