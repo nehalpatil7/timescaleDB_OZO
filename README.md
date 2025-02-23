@@ -12,8 +12,11 @@
 ### Setup
 * installing postgres
 > sudo apt-get install postgresql
+
 > sudo apt install gnupg postgresql-common apt-transport-https lsb-release wget
+
 > sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
+
 > sudo apt install postgresql-server-dev-17
 
 * installing TSdb
