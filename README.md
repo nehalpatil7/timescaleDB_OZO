@@ -6,7 +6,7 @@
 
 ### C++ drivers
 ![Screenshot 2025-02-23 at 12 14 47 PM](https://github.com/user-attachments/assets/6a787539-af44-49b5-82f9-a33ad608fa5c)
-The above findings are for my personal research, you can research them based on your application needs.
+ - The above findings are for my personal research, you can research them based on your application needs.
  - OZO might be a good choice as it supports high concurrency, async processing and connection pooling, but comes with a hard learning curve because of Boost.asio.
  - taoPQ and pgfe might also be good alternatives due to performance and ease of use.
 
