@@ -1,7 +1,7 @@
 # TimescaleDB - Findings & Benchmarks
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=git,cpp,postgres,TSdb" /><br>
+  <img src="https://skillicons.dev/icons?i=git,cpp,postgres" /><br>
 </p>
 
 ### C++ drivers
